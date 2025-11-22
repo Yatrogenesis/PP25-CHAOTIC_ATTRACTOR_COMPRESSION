@@ -20,7 +20,7 @@
 
 **Status**: READY NOW
 **Format**: Markdown + Code
-**DOI**: Zenodo assigns automatically (10.5281/zenodo.XXXXXX)
+**DOI**: Zenodo assigns automatically (10.5281/zenodo.17680988)
 
 **Purpose**:
 - Establish priority and timestamp
@@ -212,7 +212,7 @@ git push origin v1.0.0
 
 ### Phase 1: Pre-print (NOW)
 1. ✅ Publish GitHub repo with Markdown paper
-2. ✅ Get Zenodo DOI (10.5281/zenodo.XXXXXX)
+2. ✅ Get Zenodo DOI (10.5281/zenodo.17680988)
 3. ⏳ Convert paper to LaTeX
 4. ⏳ Submit to arXiv (cs.LG)
 
@@ -270,7 +270,7 @@ You can **safely**:
 
 You will have **multiple identifiers** that coexist:
 
-1. **Zenodo DOI** (10.5281/zenodo.XXXXXX)
+1. **Zenodo DOI** (10.5281/zenodo.17680988)
    - Pre-print version
    - Permanent archival
    - Citable immediately

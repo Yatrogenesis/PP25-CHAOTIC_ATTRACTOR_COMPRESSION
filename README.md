@@ -1,6 +1,6 @@
 # Chaotic Attractor-Based Compression for High-Dimensional Machine Learning Embeddings
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17680988.svg)](https://doi.org/10.5281/zenodo.17680988)
 [![arXiv](https://img.shields.io/badge/arXiv-2025.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2025.XXXXX)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -118,18 +118,18 @@ If you use this work, please cite:
   month={November},
   note={Preprint},
   howpublished={Zenodo},
-  doi={10.5281/zenodo.XXXXXX},
+  doi={10.5281/zenodo.17680988},
   url={https://github.com/Yatrogenesis/PP25-CHAOTIC_ATTRACTOR_COMPRESSION}
 }
 ```
 
 ### APA
 
-Molina Burgos, F. (2025). *Chaotic Attractor-Based Compression for High-Dimensional Machine Learning Embeddings* [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXX
+Molina Burgos, F. (2025). *Chaotic Attractor-Based Compression for High-Dimensional Machine Learning Embeddings* [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.17680988
 
 ### IEEE
 
-F. Molina Burgos, "Chaotic Attractor-Based Compression for High-Dimensional Machine Learning Embeddings," Zenodo, Nov. 2025. doi: 10.5281/zenodo.XXXXXX
+F. Molina Burgos, "Chaotic Attractor-Based Compression for High-Dimensional Machine Learning Embeddings," Zenodo, Nov. 2025. doi: 10.5281/zenodo.17680988
 
 ---
 
@@ -161,7 +161,7 @@ F. Molina Burgos, "Chaotic Attractor-Based Compression for High-Dimensional Mach
 
 ## Publication Status
 
-- **Preprint**: Published on Zenodo (DOI: 10.5281/zenodo.XXXXXX)
+- **Preprint**: Published on Zenodo (DOI: 10.5281/zenodo.17680988)
 - **arXiv**: Submitted (arXiv:2025.XXXXX)
 - **Conference**: Target NeurIPS 2025 (deadline: May 2025)
 - **Peer Review**: Not yet peer-reviewed
@@ -201,6 +201,6 @@ This work was conducted independently. I thank the Rust community for excellent 
 
 ---
 
-**Last Updated**: November 21, 2025
+**Last Updated**: November 22, 2025
 **Repository**: https://github.com/Yatrogenesis/PP25-CHAOTIC_ATTRACTOR_COMPRESSION
-**DOI**: 10.5281/zenodo.XXXXXX (pending)
+**DOI**: [10.5281/zenodo.17680988](https://doi.org/10.5281/zenodo.17680988)
