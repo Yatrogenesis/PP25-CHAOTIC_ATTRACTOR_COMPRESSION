@@ -1,0 +1,21 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+
+# PDF output (keep only main paper)
+# paper_arxiv.pdf is tracked
+
+# Old/backup files
+*_old.tex
+*_backup.tex
+paper_icmlt.tex

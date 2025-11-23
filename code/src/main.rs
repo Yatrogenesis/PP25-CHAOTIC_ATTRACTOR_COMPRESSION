@@ -353,18 +353,39 @@ fn calculate_consecutive_similarity(vectors: &[Vec<f32>]) -> f64 {
     sum / ((vectors.len() - 1) as f64)
 }
 
+/// Calculate accuracy loss using cosine similarity
+///
+/// **Note**: Previous version used MSE/variance which produced artificially inflated
+/// loss percentages (>1 billion %) due to BERT embeddings being normalized with tiny variance.
+///
+/// **Current metric**: 1 - avg(cosine_similarity)
+/// - 0% = perfect reconstruction (cosine_sim = 1.0)
+/// - 100% = orthogonal vectors (cosine_sim = 0.0)
+/// - This is the standard metric for embedding quality in NLP
 fn calculate_accuracy_loss(original: &[Vec<f32>], decompressed: &[Vec<f32>]) -> f64 {
-    let mut total_error = 0.0_f64;
+    // Use 1 - cosine_similarity as loss metric (0-100%)
+    // This is the standard metric for embeddings
+    let mut total_cosine_sim = 0.0_f64;
     let mut count = 0;
 
     for (orig, decomp) in original.iter().zip(decompressed.iter()) {
-        for (&o, &d) in orig.iter().zip(decomp.iter()) {
-            total_error += ((o - d) / o.max(1e-10)).abs() as f64;
-            count += 1;
-        }
+        let dot: f64 = orig.iter().zip(decomp.iter()).map(|(&a, &b)| (a * b) as f64).sum();
+        let norm_orig: f64 = orig.iter().map(|&x| (x * x) as f64).sum::<f64>().sqrt();
+        let norm_decomp: f64 = decomp.iter().map(|&x| (x * x) as f64).sum::<f64>().sqrt();
+
+        let cosine_sim = if norm_orig > 1e-10 && norm_decomp > 1e-10 {
+            dot / (norm_orig * norm_decomp)
+        } else {
+            0.0
+        };
+
+        total_cosine_sim += cosine_sim;
+        count += 1;
     }
 
-    (total_error / count as f64) * 100.0
+    let avg_cosine_sim = total_cosine_sim / count as f64;
+    // Return loss as (1 - similarity) * 100%
+    ((1.0 - avg_cosine_sim).max(0.0) * 100.0)
 }
 
 fn print_comparison_table(all_results: &[(String, f64, Vec<ExperimentResults>)]) {
