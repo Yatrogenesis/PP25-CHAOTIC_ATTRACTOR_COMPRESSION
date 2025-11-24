@@ -25,13 +25,23 @@ High-dimensional embedding vectors (typically 768D for BERT-base) pose significa
 
 ## Publication Status
 
-**Pre-print**: This repository contains the pre-print version with Markdown paper and reproducible code.
+**Current Status** (November 2025):
+- ✅ **Preprint**: Published on Zenodo (DOI: 10.5281/zenodo.17680988)
+- 🔄 **arXiv**: Pending endorsement (cs.LG, endorsement code: 8CZ4I7)
+- 📋 **Peer Review**: Not yet peer-reviewed
 
-**Target venues**:
-- **arXiv** (cs.LG): After LaTeX conversion (1-2 weeks)
-- **ICMLT 2026**: Deadline Dec 25, 2025 (Berlin conference)
-- **JMLR**: Rolling submission (open access journal)
-- **NeurIPS 2026**: Deadline ~May 2026 (estimated)
+**Target Conference Venues**:
+- **ICML 2026** (International Conference on Machine Learning)
+  - Deadline: ~January 2026 (estimated)
+  - Location: TBD
+  - Focus: Machine Learning theory and applications
+
+- **DCC 2026** (Data Compression Conference)
+  - Deadline: ~November 2025 / January 2026
+  - Location: TBD
+  - Focus: Data compression algorithms
+
+**Endorsement Request**: Sent to Dr. Leland McInnes (UMAP author) for arXiv cs.LG category
 
 See [PUBLICATION_STRATEGY.md](PUBLICATION_STRATEGY.md) for detailed publication plan.
 
@@ -156,15 +166,6 @@ F. Molina Burgos, "Chaotic Attractor-Based Compression for High-Dimensional Mach
 - D₂ = 0.53 (nearly one-dimensional!)
 - λ₁ = +0.645 (chaotic)
 - Theoretical potential: 1,449× compression
-
----
-
-## Publication Status
-
-- **Preprint**: Published on Zenodo (DOI: 10.5281/zenodo.17680988)
-- **arXiv**: Submitted (arXiv:2025.XXXXX)
-- **Conference**: Target NeurIPS 2025 (deadline: May 2025)
-- **Peer Review**: Not yet peer-reviewed
 
 ---
 
