@@ -44,10 +44,12 @@ fn main() {
     println!("Fecha: 2025-11-22");
     println!("Versión: 3.0 - Con embeddings REALES de BERT\n");
 
-    // LOAD REAL BERT EMBEDDINGS FROM JSON
+    // LOAD REAL BERT EMBEDDINGS FROM JSON (HuggingFace Wikipedia + CC-News)
+    // Updated 2025-12-05: Now using REAL datasets from Wikipedia and CC-News
+    // Old templated data available as: wikipedia_2k.json, news_temporal_2k.json
     let bert_paths = vec![
-        "data/real_embeddings/wikipedia_2k.json",
-        "data/real_embeddings/news_temporal_2k.json",
+        "data/real_embeddings/wikipedia_2k_REAL.json",
+        "data/real_embeddings/news_temporal_2k_REAL.json",
     ];
 
     let mut datasets: Vec<(String, Vec<Vec<f32>>)> = Vec::new();
