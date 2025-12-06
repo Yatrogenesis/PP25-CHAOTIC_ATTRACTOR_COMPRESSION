@@ -109,7 +109,13 @@ code/data/real_embeddings/
 
 ## Validation Results
 
-Fulldetails at: [CHAOTIC_ATTRACTOR_VALIDATION](https://github.com/Yatrogenesis/CHAOTIC_ATTRACTOR_VALIDATION)
+Full details at: **[Independent Validation Repository](https://github.com/Yatrogenesis/CHAOTIC_ATTRACTOR_VALIDATION)**
+
+This repository contains:
+- Complete validation reports
+- All experimental runs (3 iterations)
+- Real dataset generation scripts
+- Comparative analysis of templated vs real data
 
 | Run | Wikipedia | News | Reproducibility |
 |-----|-----------|------|-----------------|
