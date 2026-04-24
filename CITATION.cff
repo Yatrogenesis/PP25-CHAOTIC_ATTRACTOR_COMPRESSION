@@ -1,38 +1,40 @@
 cff-version: 1.2.0
-message: "If you use this software or paper, please cite it as below."
+message: "If you use this paper or software, please cite it as below."
 type: software
-title: "Chaotic Attractor-Based Compression for High-Dimensional Machine Learning Embeddings"
-version: 1.0.0
-doi: 10.5281/zenodo.17932389
-date-released: "2025-11-21"
-url: "https://github.com/Yatrogenesis/PP25-CHAOTIC_ATTRACTOR_COMPRESSION"
-repository-code: "https://github.com/Yatrogenesis/PP25-CHAOTIC_ATTRACTOR_COMPRESSION"
-license: MIT
+title: "Exploiting Low-Dimensional Manifold Structure for Archival Compression of High-Dimensional ML Embeddings: A Dynamical Systems Approach"
+version: 1.1.0
+doi: 10.5281/zenodo.17680988
+date-released: "2026-04-24"
+url: "https://github.com/Yatrogenesis/Embedding-Manifold-Compression"
+repository-code: "https://github.com/Yatrogenesis/Embedding-Manifold-Compression"
+license: CC-BY-4.0
 authors:
-  - family-names: "Molina Burgos"
+  - family-names: "Molina-Burgos"
     given-names: "Francisco"
-    email: "pako.molina@gmail.com"
+    email: "fmolina@avermex.com"
     orcid: "https://orcid.org/0009-0008-6093-8267"
-    affiliation: "Independent Researcher"
+    affiliation: "Avermex Research Division"
 keywords:
   - machine learning
   - embedding compression
+  - manifold structure
   - chaotic attractors
   - correlation dimension
   - Lyapunov exponents
   - information theory
   - dynamical systems
   - BERT embeddings
+  - archival compression
 abstract: >
-  High-dimensional embedding vectors (typically 768D for BERT-base) pose
-  significant storage and transmission challenges in modern machine learning
-  systems. We demonstrate that embeddings exhibiting chaotic attractor dynamics
-  enable extreme compression ratios exceeding 200×. Through rigorous analysis
-  of correlation dimension D₂ and Lyapunov exponents λ₁, we identify datasets
-  where embeddings inhabit low-dimensional manifolds (D₂ < 1) within the nominal
-  high-dimensional space. We present a novel compression algorithm based on
-  Principal Component Analysis (PCA) projection followed by delta encoding in
-  the reduced space, achieving 166-261× compression on synthetic datasets.
+  Large-scale machine learning systems generate billions of high-dimensional
+  embedding vectors (768D for BERT-base), creating multi-terabyte archival
+  storage requirements. We exploit the intrinsic low-dimensional manifold
+  structure of embedding sequences using tools from dynamical systems theory
+  (correlation dimension D₂, Lyapunov exponents λ₁). Our PCA-based differential
+  encoding achieves 167–178× compression with 13–16% cosine similarity loss
+  on real BERT embeddings from Wikipedia and CC-News corpora. We formally
+  explain why GZIP achieves only 6.3% efficiency on low-entropy float deltas
+  and provide a complete open-source Rust implementation.
 references:
   - type: article
     authors:
@@ -63,6 +65,15 @@ references:
     start: 189
     end: 208
     doi: "10.1016/0167-2789(83)90298-1"
+  - type: article
+    authors:
+      - family-names: "Shannon"
+        given-names: "Claude E."
+    title: "A Mathematical Theory of Communication"
+    journal: "Bell System Technical Journal"
+    volume: 27
+    year: 1948
+    doi: "10.1002/j.1538-7305.1948.tb01338.x"
   - type: article
     authors:
       - family-names: "Jégou"

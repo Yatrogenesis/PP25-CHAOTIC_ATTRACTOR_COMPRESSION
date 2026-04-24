@@ -1,0 +1,8 @@
+code/target/
+code/chaos-compression/target/
+*.bin
+*.dat
+data/
+__pycache__/
+*.pyc
+.DS_Store
